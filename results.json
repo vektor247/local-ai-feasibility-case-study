@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "case_study_date": "2026-10-07",
+  "data_classification": "public aggregate; synthetic-data test",
+  "implementation_visibility": "private",
+  "system_class": {
+    "operating_system": "Pop!_OS Linux",
+    "processor_class": "AMD Ryzen 9 PRO with integrated AMD graphics",
+    "system_memory_gib": 32
+  },
+  "task": {
+    "supported_cases": 4,
+    "unsupported_cases": 1,
+    "required_behavior": "expected fact and source citation, or defined refusal"
+  },
+  "initial_configuration": {
+    "passed": 5,
+    "total": 5,
+    "cold_first_answer_ms": 24310.03,
+    "warm_median_ms": 5427.34,
+    "warm_range_ms": [5069.54, 6098.09],
+    "runtime_reported_loaded_size_gb": 17.0
+  },
+  "selected_compact_configuration": {
+    "passed": 5,
+    "total": 5,
+    "cold_first_answer_ms": 11209.71,
+    "warm_median_ms": 6324.2,
+    "warm_range_ms": [5841.69, 7132.89],
+    "runtime_reported_loaded_size_gb": 9.4,
+    "private_artifact_sha256": "a4051b30d93f8f1344f99a0b6c3a8d9920407b496340f3beacc598b92262b9d2"
+  },
+  "rejected_configuration": {
+    "result": "failed during inference and excluded",
+    "private_failure_evidence_retained": true
+  },
+  "additional_spend_usd": 0,
+  "limitations": [
+    "small predefined synthetic fixture",
+    "no independent operating-system or runtime network audit",
+    "no adversarial prompt suite",
+    "no concurrency or sustained-load test",
+    "no customer or production data",
+    "runtime size is a tool-reported observation, not independent peak RSS"
+  ]
+}
