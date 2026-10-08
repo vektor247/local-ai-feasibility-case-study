@@ -1,6 +1,6 @@
 # Proprietary Notice
 
-Copyright © 2026 Jhay Foreign. All rights reserved.
+Copyright © 2026 Juan. All rights reserved.
 
 This public repository contains an evidence-only case study. It does not include
 the implementation source, prompts, fixtures, internal documentation, operating

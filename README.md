@@ -1,9 +1,9 @@
-# Local AI & Linux Systems — Jhay Foreign
+# Juan — AI Developer
 
 **Local AI, business automation, and documented handoff for systems you own.**
 
-I own a recording studio and label, and have built an internal Linux and AI
-environment to support those operations. That work includes local inference,
+I'm Juan, an AI developer building local AI systems and business automation.
+I've built and operate an internal Linux and AI environment. That work includes local inference,
 containerized applications, custom media workflows, approval controls, dashboards,
 and encrypted recovery tooling.
 
