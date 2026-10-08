@@ -3,6 +3,9 @@
   "case_study_date": "2026-10-07",
   "data_classification": "public aggregate; synthetic-data test",
   "implementation_visibility": "private",
+  "review_date": "2026-10-08",
+  "review_note": "Passed counts refer to automated checks, not semantic accuracy. Later review found one answer reversed who gives notice. Retrieval rejected the unsupported case without model inference.",
+  "timing_note": "First-answer measurements include model loading. OS cache was not controlled; each warm median uses three subsequent answers from one run.",
   "system_class": {
     "operating_system": "Pop!_OS Linux",
     "processor_class": "AMD Ryzen 9 PRO with integrated AMD graphics",
@@ -37,6 +40,9 @@
   "additional_spend_usd": 0,
   "limitations": [
     "small predefined synthetic fixture",
+    "keyword and citation checks missed a semantic role reversal",
+    "unsupported case does not test model-level refusal",
+    "single runs with uncontrolled OS cache; no confirmed cold-start speedup",
     "no independent operating-system or runtime network audit",
     "no adversarial prompt suite",
     "no concurrency or sustained-load test",

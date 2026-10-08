@@ -1,80 +1,74 @@
-# Local AI Feasibility Case Study
+# Local AI & Linux Systems — Jhay Foreign
 
-Private implementation, public results. Prepared by Jhay Foreign in October 2026.
+**Local AI, business automation, and documented handoff for systems you own.**
 
-## Objective
+I own a recording studio and label, and have built an internal Linux and AI
+environment to support those operations. That work includes local inference,
+containerized applications, custom media workflows, approval controls, dashboards,
+and encrypted recovery tooling.
 
-Determine whether a compact Linux computer can answer operational questions from
-a small local knowledge set, cite the selected record, reject an unsupported
-question, and produce evidence suitable for a deployment decision.
+This portfolio connects that operating experience to a proposed offline knowledge
+mini-PC project. Implementation source and internal business records remain private.
 
-The implementation, prompts, synthetic fixtures, internal operating records, and
-source code remain private. This repository is an evidence-only case study.
+[Systems and evidence](EVIDENCE.md) · [Prototype delivery plan](DELIVERY.md) ·
+[Measured results](results.json)
 
-## Tested environment
+## What I have built and operate
 
-- Pop!_OS on a compact AMD Ryzen 9 PRO system
-- 32 GB system memory and integrated AMD graphics
-- A local quantized model served through a loopback-only inference endpoint
-- Fictional test records; no customer, artist, label, or production data
-- No paid API, cloud inference, or new hardware used for the test
+| System | Relevant work | Value for your project |
+|---|---|---|
+| Linux / local AI environment | Pop!_OS, local models, Docker applications, PostgreSQL, Redis, managed services and remote administration | Integrating services on an existing Linux machine |
+| Media automation | Python workflows, media processing, job queues, retries, approval controls and dashboards | Connecting tools into manageable business workflows |
+| Recovery and maintenance | Encrypted database/configuration backups, restore tooling and documented update procedures | Planning for maintenance and recovery |
+| Reliability improvements | Concurrent-state handling, duplicate-action prevention and secret-aware automation | Addressing operational failure modes |
 
-## Acceptance criteria
+These systems serve my own operations. The evidence page distinguishes inspected
+components, historical records, and newly measured results.
 
-Five predefined cases were evaluated:
+## A practical approach to an offline knowledge mini PC
 
-1. Retrieve and cite an emergency-contact record.
-2. Retrieve and cite a scheduling-policy record.
-3. Retrieve and cite a data-retention record.
-4. Retrieve and cite a warranty record.
-5. Reject a question not supported by the supplied records.
+The proposed prototype combines local AI, reference and educational content,
+a local portal, and repeatable setup and update instructions.
 
-Passing required the expected source, expected fact, and source citation for each
-supported question. The unsupported question had to return the defined refusal.
+| Stage | Customer deliverable | Proposed acceptance check |
+|---|---|---|
+| Scope and base system | Hardware/content requirements, service layout and installation plan | Confirm storage, model fit, access and offline tasks |
+| Integrated prototype | Container configuration, AI interface, content services and portal | Exercise user tasks, service startup and local access |
+| Offline verification | Results for disconnected operation and failure recovery | Disconnect external connectivity, reboot and repeat agreed tasks |
+| Handoff | Project repository, setup/update scripts, operator guide and walkthrough | Repeat installation on agreed clean hardware or a suitable test environment |
 
-## Results
+The offline content services would be new integrations into my existing skill set.
+The [delivery plan](DELIVERY.md) explains the components and scoping questions.
+Each stage has a review point and a concrete deliverable.
 
-| Measurement | Initial configuration | Selected compact configuration |
+## Measured example: local knowledge answering
+
+A compact AMD Linux system with 32 GB RAM ran a synthetic knowledge exercise.
+Two configurations completed the exercise; a failed acceleration attempt was
+also retained as evidence.
+
+| Observation | Initial run | Compact run |
 |---|---:|---:|
-| Acceptance cases passed | 5/5 | 5/5 |
-| Cold first answer | 24.31 s | 11.21 s |
-| Warm-answer median | 5.43 s | 6.32 s |
-| Warm-answer range | 5.07–6.10 s | 5.84–7.13 s |
+| Automated fixture checks passed | 5/5 | 5/5 |
+| First answer, including model loading | 24.31 s | 11.21 s |
+| Median of three subsequent answers | 5.43 s | 6.32 s |
 | Runtime-reported loaded size | 17 GB | 9.4 GB |
 
-The selected configuration reduced the displayed loaded size and cold-start time,
-with a modest warm-response tradeoff. One automatic acceleration configuration
-failed during inference and was rejected rather than counted as a successful run.
+The compact run used less reported memory, with slower subsequent answers. These
+are single-run observations, not controlled cold-start benchmarks. The five checks
+cover expected terms, source selection and citation formatting. A later review
+found a wording error those checks missed; they are not a general accuracy score.
+Read the [method and review notes](EVIDENCE.md).
 
-The aggregate machine-readable result is in [results.json](results.json). Its
-`private_artifact_sha256` value identifies the retained private raw report without
-publishing the report, fixtures, prompts, or implementation.
+## Discuss your prototype
 
-## What this establishes
+Reply to the introduction that brought you here with your target hardware,
+required content, expected user count, and tasks that must work offline.
+I can use those requirements to propose milestones, a timeline and a project price.
 
-- One bounded local knowledge workflow ran successfully on the tested hardware.
-- Performance and failure behavior were measured instead of inferred.
-- A smaller runtime footprint was achievable without losing the five-case result.
-- The test can support a scoped feasibility discussion and deployment estimate.
+A technical walkthrough can cover the operating environment, selected automation
+and recovery examples, measured AI behavior, and the proposed delivery plan.
+Existing business code stays private. Project-specific configuration, scripts and
+documentation would be delivered under agreed scope and ownership terms.
 
-## What this does not establish
-
-This is not proof of production accuracy, complete offline behavior, security
-certification, access control, high concurrency, large-document retrieval, or
-performance on customer data. The client application used a loopback endpoint,
-but the operating system and model runtime were not independently network-audited.
-
-## Commercial scope demonstrated
-
-The evidence supports a small first milestone: hardware and software inventory,
-one synthetic-data workflow, measured latency and task success, documented failure
-cases, and a handoff describing whether a larger deployment is justified.
-
-It does not claim a finished platform, custom model training, penetration testing,
-regulatory compliance, or 24/7 managed support.
-
-## Rights and source availability
-
-No source code or implementation license is granted through this repository. See
-[NOTICE.md](NOTICE.md). Technical details may be discussed under an agreed project
-scope without transferring unrelated proprietary systems or operating records.
+Updated October 2026. [Rights and source availability](NOTICE.md).
